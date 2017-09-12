@@ -1,0 +1,22 @@
+---
+agent:
+  username: admin
+  password: admin
+  port: 2718
+  manifest:
+    jobs:
+     - name: postgresql
+       networks:
+          - name: postgresql-network
+            static_ips:
+              - 127.0.0.1
+    properties:
+        postgresql:
+          port: 5432
+          database: test
+          host: localhost
+          admin:
+            user: postgres
+            password: admin
+path:
+  logs: ./logs

@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p This is #{title}
+  p Currently the agent supports the following api calls
+  <ul>
+  <li>/v1/info</li>
+  <li>/v1/credentials/create</li>
+  <li>/v1/credentials/delete</li>
+  </ul>
